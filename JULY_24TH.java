@@ -38,10 +38,9 @@ public class JULY_24TH {
 When iterating over an array of **primitive data types** (such as `int`, `double`, or `char`), the loop variable receives a **copy of each element's value**,
  not the actual element stored in the array. Therefore, modifying the loop variable (e.g., `x = x + 5`) changes only the local copy, leaving the original array unchanged. 
  In contrast, when iterating over an array of **objects**, the loop variable receives a **copy of the object's reference**. 
- Although the reference itself is copied, both references point to the **same object in the heap**, so modifying the object's fields (e.g., `student.name = "Priya"`) changes the original object, 
+ Although the reference itself is copied, both references point to the **same object in the heap**, so modifying the object's fields (e.g., `student.name = "Priya"`) changes the original object
  and the changes are visible through every reference pointing to that object.
   Therefore, an enhanced for loop cannot be used to modify the values of a primitive array by changing the loop variable, but it can be used to modify the internal state of objects stored in an object array.
  */
 
 
-  
