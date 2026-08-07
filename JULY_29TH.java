@@ -21,6 +21,15 @@ public class JULY_29TH {
         String[] fruits = s.split(",");
         for(String fruit : fruits) {
             System.out.println(fruit);
+
+
+    // Reverse a String → length() + charAt()
+    // Palindrome → charAt()
+    // Count vowels → charAt() + length()
+    // Word count → split()
+    // Find a substring → contains() or indexOf()
+    // Remove spaces → trim() or replace()
+    // Case-insensitive comparison → equalsIgnoreCase()    
         }
     }
 }
