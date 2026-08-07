@@ -1,6 +1,6 @@
 public class JULY_29TH {
     public static void main(String[] args) {
-        String name= new String("Hello World");
+        /*String name= new String("Hello World");
         System.out.println(name);
         System.out.println(name.toUpperCase());
         System.out.println(name.toLowerCase());
@@ -14,6 +14,13 @@ public class JULY_29TH {
         System.out.println(name.endsWith("World"));
         System.out.println(name.equals("Hello World"));
         System.out.println(name.equalsIgnoreCase("hello world")); 
-        System.out.println(name.contains("Hello"));
+        System.out.println(name.contains("Hello"));*/
+
+        //Split MEthod
+        String s = "Apple,Banana,Mango";
+        String[] fruits = s.split(",");
+        for(String fruit : fruits) {
+            System.out.println(fruit);
+        }
     }
 }
