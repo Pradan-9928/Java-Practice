@@ -89,14 +89,16 @@ Before: {10, 20, 30, 40, 50}
 
 After: {50, 40, 30, 20, 10} */
 
-public class AUG_10TH{
+/*public class AUG_10TH{
     public static void reverseArray(int[] arr){
-        for(int i=0;i<arr.length;i++){
-            for(int j=arr.length;j!=0;j--){
-                arr[j]=arr[i];
+        for(int i=0;i<arr.length / 2;i++){
+            int oppositeIndex=arr.length - 1 - i ;
+            int temp = arr[i];
+            arr[i] = arr[oppositeIndex];
+            arr[oppositeIndex] = temp;
             }
         }
-    }
+    
     public static void main(String[] args){
         int[] numbers={10, 20, 30, 40, 50};
         for(int i=0;i<numbers.length;i++){
@@ -110,12 +112,12 @@ public class AUG_10TH{
         }
          
 
-            
+    }}*/
 
-    }
+
+
 
     
-}
 
 
 
