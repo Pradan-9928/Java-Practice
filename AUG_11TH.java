@@ -51,7 +51,7 @@ Examples:
 "madam" → true
 "racecar" → true
 "hello" → false
-"level" → true */
+"level" → true 
 
 
 public class AUG_11TH{
@@ -75,4 +75,41 @@ public class AUG_11TH{
 
 
     }
+}*/
+
+/*Task: Write a Java method named secondLargest(int[] arr) that returns the second-largest distinct element in an array of integers.
+
+Key Requirement: The second-largest element must be distinct (meaning duplicate values of the largest number shouldn't count as the second-largest).
+
+Example:
+
+Input: {10, 5, 20, 8, 15}
+
+Output: 15
+
+Explanation: Largest = 20, Second largest = 15
+public class AUG_11TH{
+    public static int secondLargest(int[] arr) {
+    int largest = Integer.MIN_VALUE;
+    int secondLargest = Integer.MIN_VALUE;
+
+    for (int x : arr) {
+
+        if (x > largest) {
+            secondLargest = largest;
+            largest = x;
+        }
+        else if (x > secondLargest && x != largest) {
+            secondLargest = x;
+        }
+    }
+
+    return secondLargest;
 }
+    public static void main(String[] args){
+        int[] arr={10, 20, 20, 5, 15};
+        System.out.println("The second largest integer is " + secondLargest(arr));
+
+
+    }
+}*/
