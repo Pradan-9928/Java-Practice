@@ -1,25 +1,76 @@
 import java.util.*;
 public class AUG_13TH {
     public static void Rectangle(int n , int m){
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=m;j++){
+        for(int i=1;i<=m;i++){
+            for(int j=1;j<=n;j++){
                 System.out.print("*");
             }
             System.out.println();
         }
     }
-    public static void Hollow_Rectangle(){
+    public static void Hollow_Rectangle(int m, int n){
+        for(int i=1;i<=m;i++){
+            for(int j=1;j<=n;j++){
+                if(i==1||j==1||i==m||j==n){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    public static void Half_Pyramid(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    public static void Inverted_Half_Pyramid(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    public static void Inverted_Half_Pyramid_Mirror(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i;j++){
+                System.out.println(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.println("*");
+            }
+            System.out.println();
+        }
+    }
 
+    public static void Inverted_Half_Pyramid_Numbers(int n){
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
     }
     public static void main(String args[]){
         
         Scanner sc= new Scanner(System.in);
-        System.out.print("Enter number of rows");
-        int n=sc.nextInt();
-
-        System.out.print("Enter number of columns");
+        System.out.print("Enter number of rows ");
         int m=sc.nextInt();
+
+        System.out.print("Enter number of columns ");
+        int n=sc.nextInt();
         Rectangle(n,m);
+        Hollow_Rectangle(m,n);
+        Half_Pyramid(n);
+        Inverted_Half_Pyramid(n);
+        Inverted_Half_Pyramid_Mirror(n);
+        Inverted_Half_Pyramid_Numbers(n);
+
 
 
         sc.close();
