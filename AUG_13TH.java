@@ -77,7 +77,7 @@ public class AUG_13TH {
             }
         }
         System.out.println(); // Moved outside the inner loop
-    }
+    }}
     
     public static void main(String args[]){
         

@@ -19,5 +19,5 @@ public class AUG_17TH{
         System.out.println("Enter the number of rows");
         int rows=sc.nextInt();
         Butterfly_Pattern(rows);
-
+        sc.close();
     }
