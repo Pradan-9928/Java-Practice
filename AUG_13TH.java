@@ -48,7 +48,7 @@ public class AUG_13TH {
         }
     }
 
-    public static void Inverted_Half_Pyramid_Numbers(int n){
+    public static void Half_Pyramid_Numbers(int n){
         for(int i=1;i<=n;i++){
             for(int j=1;j<=i;j++){
                 System.out.print(j);
@@ -56,6 +56,29 @@ public class AUG_13TH {
             System.out.println();
         }
     }
+    public static void Floyds_Triangle(int n){
+        int number =1;
+        for(int i=1;i<=n;i++){
+            for(int j=0;j<=i;j++){
+                System.out.print(number + " ");
+                number++;
+            }
+            System.out.println();
+        }
+    }
+    public static void binary_Triangle(int n) {
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            int sum = i + j;
+            if (sum % 2 == 0) {
+                System.out.print("1 ");
+            } else {
+                System.out.print("0 ");
+            }
+        }
+        System.out.println(); // Moved outside the inner loop
+    }
+    
     public static void main(String args[]){
         
         Scanner sc= new Scanner(System.in);
@@ -69,11 +92,12 @@ public class AUG_13TH {
         Half_Pyramid(n);
         Inverted_Half_Pyramid(n);
         Inverted_Half_Pyramid_Mirror(n);
-        Inverted_Half_Pyramid_Numbers(n);
+        Half_Pyramid_Numbers(n);
+        Floyds_Triangle(n); 
+        binary_Triangle(n);
 
 
 
         sc.close();
     }
-    
 }
