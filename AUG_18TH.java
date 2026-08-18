@@ -1,5 +1,5 @@
 import java.util.*;
-public class AUG_18TH{
+class AUG_18TH{
     public static void Problem_1(){
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the first Number");
@@ -51,6 +51,22 @@ public class AUG_18TH{
             i--;
         }while (i<5);
     }
+    public static void Reversal(StringBuilder s){
+        int length=s.length();
+        for(int i=0;i<(length/2);i++){
+            int start=i;
+            int end=length-i-1;
+
+            char frontchar = s.charAt(start);
+            char endchar=s.charAt(end);
+
+            s.setCharAt(start, endchar);
+            s.setCharAt(end, frontchar);
+        
+
+        }
+    }
+  
 
     public static void main(String[] args) {
         // Testing the functions:
@@ -66,7 +82,10 @@ public class AUG_18TH{
         } else {
             System.out.println("Age " + age + ": Not eligible to vote.");
         }
-        Do_While();
+        
+        StringBuilder s= new StringBuilder("Hello I am Pradan");
+        Reversal(s);
+        System.out.println(s);
     }
         
 
