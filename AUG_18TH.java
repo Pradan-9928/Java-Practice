@@ -70,11 +70,11 @@ class AUG_18TH{
 
     public static void main(String[] args) {
         // Testing the functions:
-        printSumOfOddNumbers(10); // Output: 25
+        // printSumOfOddNumbers(10); // Output: 25
 
-        System.out.println("Greater number: " + getGreater(15, 25)); // Output: 25
+        // System.out.println("Greater number: " + getGreater(15, 25)); // Output: 25
 
-        System.out.println("Circumference: " + getCircumference(7)); // Output: ~43.98
+        // System.out.println("Circumference: " + getCircumference(7)); // Output: ~43.98
 
         int age = 20;
         if (isEligibleToVote(age)) {
@@ -83,9 +83,9 @@ class AUG_18TH{
             System.out.println("Age " + age + ": Not eligible to vote.");
         }
         
-        StringBuilder s= new StringBuilder("Hello I am Pradan");
-        Reversal(s);
-        System.out.println(s);
+        // StringBuilder s= new StringBuilder("Hello I am Pradan");
+        // Reversal(s);
+        // System.out.println(s);
     }
         
 
