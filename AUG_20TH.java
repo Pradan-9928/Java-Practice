@@ -51,18 +51,18 @@ public class AUG_20TH{
 
         //Fibonacci Numbers
         
-        System.out.println("How many times do you want to continue");
-        int count=sc.nextInt();
-        int p=0;
-        int q=1;
-        for(int i=0;i<=count;i++){
-            int temp=q;
-            q+=p;
-            p=temp;
-            System.out.println(q);
+        System.out.println("How many time do you want to continue");
+        int times=sc.nextInt();
+        int a=0;
+        int b=1;
+        int temp=0;
+        for(int i=0;i<=times;i++){
+            temp=b;
+            b=a+b;
+            a=temp;
         }
+        System.out.println(b);
         sc.close();
-        System.out.println(q);
 
     }
     
@@ -91,7 +91,8 @@ public class AUG_20TH{
         // }
         // System.out.println(reversed);
 
-        ArmstrongNumber(153);
+        // ArmstrongNumber(153);
+        Fibonacci();
     }
 }
 
